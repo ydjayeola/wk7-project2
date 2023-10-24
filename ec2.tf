@@ -1,7 +1,7 @@
 ## Ec2 instance 
 
 resource "aws_instance" "ec2-demo" {
-    ami = "ami-033adaf0b583374d4"
+    ami = "ami-0e649b9c6c01a2b2f"
     vpc_security_group_ids = [aws_security_group.sg-demo.id]
     instance_type = "t2.micro"
     key_name = "ec2-demo"
